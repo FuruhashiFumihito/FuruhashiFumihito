@@ -26,16 +26,6 @@ I am particularly interested in integrating physics-informed neural networks (PI
 
 ---
 
-## Publications
-
-A selection of my recent works:
-
-1. **Prediction of Peripheral Vehicle Trajectories in Lagrangian Coordinates Using GNNs** – *Transportation Research Board Annual Meeting* (2024)  
-2. **Image-Based Car-Following Model with String Stability Analysis Using CVAE** – *IEEE Intelligent Transportation Systems Conference* (2025)  
-3. *Other works available on [Google Scholar](https://scholar.google.com/citations?user=XXXXXXXXXXX)*
-
----
-
 ## Skills
 
 **Programming:** Python, C++, Java, Fortran, Mathematica, JavaScript, MATLAB, Go, Rust  
