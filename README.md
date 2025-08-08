@@ -45,7 +45,7 @@ The live site is automatically deployed via **GitHub Pages** and available here:
 
 ## Contact
 
-- **Email:** your_email@domain  
+- **Email:** furuhashi@bin.t.u-tokyo.ac.jp
 - **LinkedIn:** [@FuruhashiFumihito](https://www.linkedin.com/in/fumihito-furuhashi/)  
 - **GitHub:** [@FuruhashiFumihito](https://github.com/FuruhashiFumihito)
 
