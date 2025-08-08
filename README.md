@@ -1,51 +1,62 @@
-# Academic Pages
+# Fumihito Furuhashi
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+[![Website](https://img.shields.io/badge/Website-Portfolio-blue)](https://furuhashifumihito.github.io)
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Profile-lightgrey)](https://scholar.google.co.jp/citations?user=beIKTAgAAAAJ&hl=ja&oi=ao)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0000--0000--0000-green)](https://orcid.org/0009-0001-9066-7823)
+[![GitHub](https://img.shields.io/badge/GitHub-FuruhashiFumihito-black)](https://github.com/FuruhashiFumihito)
 
-Academic Pages is a Github Pages template for academic websites.
+---
 
-# Getting Started
+## About Me
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+I am a Master's student at **The University of Tokyo**, Department of Civil Engineering, supervised by **Prof. Eiji Hato**.  
+My research focuses on **autonomous driving, traffic flow theory, and deep learning-based car-following models**.  
+I am particularly interested in integrating physics-informed neural networks (PINNs) and differential games into vehicle trajectory prediction, with applications to mixed traffic environments where automated and human-driven vehicles coexist.
 
-See more info at https://academicpages.github.io/
+---
 
-## Running Locally
+## Research Interests
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+- Traffic flow theory (micro/meso/macro modeling)
+- Car-following models and stability analysis
+- Deep learning for trajectory prediction
+- Physics-Informed Neural Networks (PINNs)
+- Differential games for traffic modeling
+- Connected Autonomous Vehicles (CAV) and Lane-Free Traffic (LFT)
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+---
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+## Publications
 
-# Maintenance
+A selection of my recent works:
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+1. **Prediction of Peripheral Vehicle Trajectories in Lagrangian Coordinates Using GNNs** – *Transportation Research Board Annual Meeting* (2024)  
+2. **Image-Based Car-Following Model with String Stability Analysis Using CVAE** – *IEEE Intelligent Transportation Systems Conference* (2025)  
+3. *Other works available on [Google Scholar](https://scholar.google.com/citations?user=XXXXXXXXXXX)*
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+---
 
-## Bugfixes and enhancements
+## Skills
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+**Programming:** Python, C++, Java, Fortran, Mathematica, JavaScript, MATLAB, Go, Rust  
+**Languages:** Japanese (native), English (fluent), Chinese (introductory)  
+**Tools & Frameworks:** PyTorch, PyTorch Geometric, OpenCV, LaTeX, Git, Poetry, uv
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+---
+
+## How to Use This Repository
+
+This repository hosts my personal academic website built with [AcademicPages](https://github.com/academicpages/academicpages.github.io) (a Jekyll-based template).  
+The live site is automatically deployed via **GitHub Pages** and available here:
+
+➡ **[furuhashifumihito.github.io](https://furuhashifumihito.github.io)**
+
+---
+
+## Contact
+
+- **Email:** your_email@domain  
+- **LinkedIn:** [@FuruhashiFumihito](https://www.linkedin.com/in/fumihito-furuhashi/)  
+- **GitHub:** [@FuruhashiFumihito](https://github.com/FuruhashiFumihito)
+
+---
