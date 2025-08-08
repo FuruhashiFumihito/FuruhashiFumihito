@@ -1,18 +1,9 @@
 # Authors
 
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
+Furuhashi Fumihito:
+  name        : "Furuhashi Fumihito"
+  uri         : "https://furuhashifumihito.github.io/FuruhashiFumihito/"
+  email       : "furuhashi@bin.t.u-tokyo.ac.jp"
+  bio         : "Master's student at The University of Tokyo, Department of Civil Engineering. My research focuses on autonomous driving, traffic flow theory, and  deep learning-based car-following models integrating stability analysis."
   avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+  linkedin    : "furuhashifumihito"
