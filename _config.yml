@@ -3,14 +3,14 @@ locale                   : "ja-JP"
 title                    : "Fumihito Furuhashi — Research"
 title_separator          : "-"
 name                     : &name "Fumihito Furuhashi"
-description              : &description "Researcher in <your field> at <your institution>."
+# description              : &description "Researcher in <your field> at <your institution>."
 url                      : "https://furuhashifumihito.github.io"   # ユーザーサイト
 baseurl                  : ""                                       # ルート直下
 repository               : "FuruhashiFumihito/FuruhashiFumihito.github.io"
 
 # === Author (左サイドバー) ===
 author:
-  avatar           : "profile.png"           # /images/profile.png に置くのが無難
+  avatar           : "profile.jpeg"           # /images/profile.png に置くのが無難
   name             : *name
   pronouns         :                          # 例: he/him
   bio              : "Research interests: Traffic Flow, Autonomous Vehicle."
