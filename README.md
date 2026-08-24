@@ -36,7 +36,7 @@ For the complete and current publication list, visit my [research website](https
 ## Selected honors
 
 - **HKSTS Outstanding Student Paper Award (1st Prize)**, The Hong Kong Society for Transportation Studies, 2025.
-- **Furuichi Kimitake Prize (古市公威賞)**, Department of Civil Engineering, The University of Tokyo, 2025 — awarded for the master's thesis *Differential-game-based trajectory prediction model for autonomous vehicle fleets*.
+- **Furuichi Koui Prize (古市公威賞)**, Department of Civil Engineering, The University of Tokyo, 2025 — awarded for the master's thesis *Differential-game-based trajectory prediction model for autonomous vehicle fleets*.
 
 ## Education
 
