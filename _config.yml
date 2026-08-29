@@ -5,8 +5,8 @@ title_separator          : "-"
 name                     : &name "Fumihito Furuhashi"
 description              : &description "Doctoral researcher in traffic engineering at the University of Tokyo, studying autonomous vehicle interaction and control."
 url                      : "https://furuhashifumihito.github.io"   # ユーザーサイト
-baseurl                  : ""                                       # ルート直下
-repository               : "FuruhashiFumihito/FuruhashiFumihito.github.io"
+baseurl                  : "/FuruhashiFumihito"
+repository               : "FuruhashiFumihito/FuruhashiFumihito"
 
 # === Author (左サイドバー) ===
 author:

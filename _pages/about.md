@@ -23,7 +23,7 @@ redirect_from:
 
     <figure class="research-portrait">
       <div class="research-portrait__frame">
-        <img src="/images/profile.jpeg" width="1313" height="1313" alt="Portrait of Fumihito Furuhashi" fetchpriority="high">
+        <img src="{{ '/images/profile.jpeg' | relative_url }}" width="1313" height="1313" alt="Portrait of Fumihito Furuhashi" fetchpriority="high">
       </div>
       <figcaption>
         <span>University of Tokyo</span>
