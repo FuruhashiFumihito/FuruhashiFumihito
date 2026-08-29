@@ -44,6 +44,7 @@ function updateNav() {
     // Hide the dropdown btn if hidden list is empty
     if(breaks.length < 1) {
       $btn.addClass('hidden');
+      $btn.attr('aria-expanded', 'false');
       $hlinks.addClass('hidden');
     }
   }
@@ -67,6 +68,7 @@ $(window).resize(function() {
 $btn.on('click', function() {
   $hlinks.toggleClass('hidden');
   $(this).toggleClass('close');
+  $(this).attr('aria-expanded', !$hlinks.hasClass('hidden'));
 });
 
 updateNav();
