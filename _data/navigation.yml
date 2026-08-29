@@ -1,22 +1,12 @@
-# main links links
 main:
+  - title: "Research"
+    url: /#research
+
   - title: "Publications"
-    url: /publications/
+    url: https://scholar.google.co.jp/citations?user=beIKTAgAAAAJ&hl=en
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Profile"
+    url: https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202601013210475944
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+  - title: "Contact"
+    url: /#contact
