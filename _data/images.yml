@@ -1,0 +1,20 @@
+# パスはすべて /images/ からの相対パス。画像は既存サイト (furuhashifumihito.github.io) のものを使用。
+# 空にすると、その帯・図は出力されません。
+
+# トップのヘッダー帯。2枚以上でスライドショーになります（上から順に表示）。
+# position は帯の中で写真のどこを見せるか（CSS の object-position。省略時は中央）。
+header:
+  - src: hero/01-amtrack.jpg
+    position: "center 70%"
+  - src: hero/02-abasiri.jpg       # 網走（元 PNG 11MB を 2000px JPEG に圧縮）
+    position: "center 45%"
+  - src: hero/03-wadabori.jpg      # 和田堀（同上）
+    position: "center 60%"
+
+# 業績ページのヘッダー帯（1枚）
+header_publications:
+  src: hero/hongo.webp
+  position:
+
+# Research セクションの代表図
+research: publications/dgpinn-framework.png

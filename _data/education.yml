@@ -1,0 +1,23 @@
+- when: "2025.10 –"
+  title:
+    en: "Ph.D. Program, Civil Engineering"
+    ja: "博士後期課程 社会基盤学専攻"
+  body:
+    en: "The University of Tokyo"
+    ja: "東京大学 大学院工学系研究科"
+
+- when: "2024.04 – 2025.09"
+  title:
+    en: "M.S., Civil Engineering"
+    ja: "修士課程 社会基盤学専攻"
+  body:
+    en: "The University of Tokyo — early completion"
+    ja: "東京大学 大学院工学系研究科 — 早期修了"
+
+- when: "2022.04 – 2024.03"
+  title:
+    en: "B.S., Systems Innovation"
+    ja: "学士課程 システム創成学科"
+  body:
+    en: "The University of Tokyo"
+    ja: "東京大学 工学部"

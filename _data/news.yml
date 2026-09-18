@@ -1,0 +1,30 @@
+# 新しいものを上に1件足すだけ。en / ja の両方を書きます。
+- date: "2026.09"
+  body:
+    en: "Selected for <a href=\"https://www.jst.go.jp/kisoken/act-x/application/2026/260917/260917.html\">JST ACT-X (FY2026)</a>, research area “Cyberinfrastructure for AI Empowered Society”."
+    ja: "<a href=\"https://www.jst.go.jp/kisoken/act-x/application/2026/260917/260917.html\">JST ACT-X（2026年度）</a>に採択されました（研究領域「AI共生社会を拓くサイバーインフラストラクチャ」）。"
+
+- date: "2026"
+  body:
+    en: "Preprint on endogeneity in game-informed trajectory prediction released on SSRN."
+    ja: "ゲーム理論に基づく軌道予測の内生性に関するプレプリントを SSRN で公開しました。"
+
+- date: "2025.10"
+  body:
+    en: "Started the Ph.D. program in Civil Engineering, The University of Tokyo."
+    ja: "東京大学 大学院工学系研究科 社会基盤学専攻 博士後期課程に進学しました。"
+
+- date: "2025.09"
+  body:
+    en: "Completed the master's program (early completion); awarded the Furuichi Koui Prize."
+    ja: "修士課程を早期修了し、古市公威賞を受賞しました。"
+
+- date: "2025"
+  body:
+    en: "DG-PINN presented at IEEE ITSC 2025."
+    ja: "IEEE ITSC 2025 で DG-PINN を発表しました。"
+
+- date: "2025"
+  body:
+    en: "HKSTS Outstanding Student Paper Award, 1st Prize."
+    ja: "HKSTS Outstanding Student Paper Award（1st Prize）を受賞しました。"

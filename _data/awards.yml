@@ -1,0 +1,24 @@
+# 受賞・研究助成。新しいものを上に。en / ja の両方を書きます。
+- year: 2026
+  title:
+    en: "JST ACT-X (FY2026)"
+    ja: "JST ACT-X 採択（2026年度）"
+  body:
+    en: "Japan Science and Technology Agency, research area “Cyberinfrastructure for AI Empowered Society” — project <em>Design of information acquisition and provision mechanisms for autonomous vehicle fleets</em>"
+    ja: "科学技術振興機構 研究領域「AI共生社会を拓くサイバーインフラストラクチャ」— 研究課題「自律走行群のための情報獲得・提供メカニズムの設計」"
+
+- year: 2025
+  title:
+    en: "HKSTS Outstanding Student Paper Award, 1st Prize"
+    ja: "HKSTS Outstanding Student Paper Award（1st Prize）"
+  body:
+    en: "The Hong Kong Society for Transportation Studies"
+    ja: "The Hong Kong Society for Transportation Studies"
+
+- year: 2025
+  title:
+    en: "Furuichi Koui Prize 古市公威賞"
+    ja: "古市公威賞"
+  body:
+    en: "Department of Civil Engineering, The University of Tokyo — for the master's thesis <em>Differential-game-based trajectory prediction model for autonomous vehicle fleets</em>"
+    ja: "東京大学 大学院工学系研究科 社会基盤学専攻 — 修士論文「微分ゲームに基づく自動運転車群の軌道予測モデル」"

@@ -1,12 +1,13 @@
+# url は言語共通（英語ページでは自動で /en が付きます）
 main:
-  - title: "Research"
+  - title: { en: "Research", ja: "研究" }
     url: /#research
 
-  - title: "Publications"
-    url: https://scholar.google.co.jp/citations?user=beIKTAgAAAAJ&hl=en
+  - title: { en: "Publications", ja: "業績" }
+    url: /publications/
 
-  - title: "Profile"
-    url: https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202601013210475944
+  - title: { en: "Awards", ja: "受賞・助成" }
+    url: /#awards
 
-  - title: "Contact"
-    url: /#contact
+  - title: { en: "News", ja: "更新履歴" }
+    url: /#news

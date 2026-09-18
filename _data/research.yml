@@ -1,0 +1,34 @@
+- title:
+    en: "Game-informed trajectory prediction and control"
+    ja: "ゲーム理論に基づく軌道予測と制御"
+  body:
+    en: "Differential games, Nash-equilibrium constraints, interaction-aware prediction, equilibrium-embedded predictive control."
+    ja: "微分ゲーム、ナッシュ均衡制約、相互作用を考慮した軌道予測、均衡制約を埋め込んだ予測制御。"
+
+- title:
+    en: "Physics-informed mobility learning"
+    ja: "物理法則を組み込んだモビリティ学習"
+  body:
+    en: "Physics-informed neural networks, graph learning, vehicle dynamics, interpretable surrogate models."
+    ja: "Physics-informed neural networks（PINN）、グラフ学習、車両ダイナミクス、解釈可能なサロゲートモデル。"
+
+- title:
+    en: "Vision-driven traffic modelling"
+    ja: "画像駆動型の交通流モデリング"
+  body:
+    en: "Map-less car-following models, trajectory data, traffic-flow stability, mixed traffic."
+    ja: "地図を用いない追従モデル、軌跡データ、交通流の安定性、混在交通。"
+
+- title:
+    en: "Mobility–energy resilience"
+    ja: "モビリティとエネルギーのレジリエンス"
+  body:
+    en: "Electric vehicles, vehicle-to-grid coordination, blackout risk, resilient urban systems."
+    ja: "電気自動車、V2G（Vehicle-to-Grid）連携、停電リスク、レジリエントな都市システム。"
+
+- title:
+    en: "Travel behaviour modelling"
+    ja: "交通行動モデリング"
+  body:
+    en: "Activity-based analysis, discrete-choice models, computational tools for mobility research."
+    ja: "アクティビティベースの分析、離散選択モデル、モビリティ研究のための計算ツール。"

@@ -1,0 +1,49 @@
+# 新しい業績はこのファイルに1件足すだけ。新しいものを上に。
+# トップページの「Selected publications」は上から4件を表示します。
+# type   : journal / preprint / international / domestic
+# title  : 原題のまま（日英どちらのページでも同じ表示）
+# venue / note : 日英で表記が違うときだけ { en: "...", ja: "..." } と書きます
+# figure : /images/ からの相対パス（任意）。業績ページのサムネイルに使われます
+# links  : kind は paper / preprint / slides / code / poster（表示名は _data/rh_strings.yml）
+
+- type: preprint
+  year: 2026
+  title: "Endogeneity in Vehicle Trajectory Prediction through Game-Informed Deep Learning"
+  authors: "Fumihito Furuhashi, Eiji Hato"
+  venue: { en: "Preprint", ja: "プレプリント" }
+  figure: publications/endogeneity-graphical-abstract.png
+  links:
+    - kind: preprint
+      url: "https://doi.org/10.2139/ssrn.6254083"
+
+- type: international
+  year: 2025
+  title: "DG-PINN: Differential Game Based Physics-Informed Neural Network for Vehicle Trajectory Prediction"
+  venue: "IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)"
+  figure: publications/dgpinn-framework.png
+  links:
+    - kind: paper
+      url: "https://doi.org/10.1109/ITSC60802.2025.11423521"
+    - kind: slides
+      url: "https://speakerdeck.com/furuhashifumihito/dg-pinn-differential-game-based-physics-informed-neural-network-for-vehicle-trajectory-prediction?slide=16"
+
+- type: international
+  year: 2025
+  title: "Physically Consistent Differential-Game Surrogates for Interaction-Aware AV Trajectory Planning"
+  venue: "29th International Conference of the Hong Kong Society for Transportation Studies"
+  note: "Outstanding Student Paper Award, 1st Prize"
+  figure:
+  links:
+    - kind: slides
+      url: "https://speakerdeck.com/furuhashifumihito/hksts-outstanding-student-paper-award-physically-consistent-differential-game-surrogates-for-interaction-aware-av-trajectory-planning"
+
+- type: journal
+  year: 2025
+  title: "OBDを用いた高速道路上の車群内追従モデルの検証"
+  venue:
+    en: "JSTE Journal of Traffic Engineering 11(2), A250–A256 (in Japanese)"
+    ja: "交通工学論文集 11(2), A250–A256"
+  figure:
+  links:
+    - kind: paper
+      url: "https://doi.org/10.14954/jste.11.2_A_250"

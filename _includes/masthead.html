@@ -1,4 +1,8 @@
 {% include base_path %}
+{% assign lang = page.lang | default: "ja" %}
+{% assign t = site.data.rh_strings[lang] %}
+{% assign o = site.data.rh_strings[t.other] %}
+{% if lang == "en" %}{% assign lang_prefix = "/en" %}{% else %}{% assign lang_prefix = "" %}{% endif %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -6,18 +10,19 @@
       <nav id="site-nav" class="greedy-nav">
         <button aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav-hidden"><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}{{ lang_prefix }}/">{{ t.site_name }}</a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
               {% else %}
-              {% assign domain = base_path %}
+              {% assign domain = base_path | append: lang_prefix %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title[lang] | default: link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul id="site-nav-hidden" class="hidden-links hidden"></ul>
       </nav>
+      <a class="masthead__lang" href="{{ page.alt_url | default: o.home | relative_url }}" lang="{{ t.other }}" hreflang="{{ t.other }}">{{ t.switch_label }}</a>
     </div>
   </div>
 </div>
