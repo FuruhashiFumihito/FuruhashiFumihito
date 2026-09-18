@@ -1,0 +1,78 @@
+# ページ上の固定文言（日英）。コンテンツ本体は awards / education / news / publications / research / tools の各 yml。
+en:
+  other: ja
+  home: /en/
+  switch_label: "日本語"
+  site_name: "Fumihito Furuhashi"
+  name_primary: "Fumihito Furuhashi"
+  name_secondary: "古橋 郁一"
+  role: "Ph.D. student, Department of Civil Engineering, The University of Tokyo"
+  role_sub: "Graduate School of Engineering · Hato Laboratory"
+  about: "I study interactions among human-driven and automated vehicles, combining traffic-flow theory, differential games, and data-driven modelling into prediction and control methods. Supervised by Prof. Eiji Hato."
+  links_label: "Contact and profiles"
+  publications_link: "Publications"
+  all_publications: "All publications and talks →"
+  publications_title: "Publications and talks"
+  back_home: "← Fumihito Furuhashi"
+  external_lists: "External lists"
+  slides_note: "Presentation slides are published on"
+  location: "Tokyo, Japan"
+  sections:
+    about: "About"
+    research: "Research"
+    selected: "Selected publications"
+    awards: "Awards and grants"
+    education: "Education"
+    news: "News"
+    tools: "Methods and tools"
+    slides: "Slides"
+  groups:
+    journal: "Journal articles"
+    preprint: "Preprints"
+    international: "International conferences"
+    domestic: "Domestic conferences"
+  link_kinds:
+    paper: "Paper"
+    preprint: "Preprint"
+    slides: "Slides"
+    code: "Code"
+    poster: "Poster"
+
+ja:
+  other: en
+  home: /
+  switch_label: "English"
+  site_name: "古橋 郁一"
+  name_primary: "古橋 郁一"
+  name_secondary: "Fumihito Furuhashi"
+  role: "東京大学 大学院工学系研究科 社会基盤学専攻 博士課程（羽藤研究室）"
+  role_sub: "Ph.D. student, Department of Civil Engineering, The University of Tokyo"
+  about: "交通流理論・微分ゲーム・機械学習を組み合わせ、自動運転車と人間の運転する車が混在する交通における相互作用の予測と制御を研究しています。指導教員は羽藤英二教授です。"
+  links_label: "連絡先・プロフィール"
+  publications_link: "業績一覧"
+  all_publications: "すべての論文・発表を見る →"
+  publications_title: "論文・発表一覧"
+  back_home: "← 古橋 郁一"
+  external_lists: "外部の業績リスト"
+  slides_note: "発表スライドはこちらで公開しています："
+  location: "東京"
+  sections:
+    about: "略歴"
+    research: "研究テーマ"
+    selected: "主要業績"
+    awards: "受賞・研究助成"
+    education: "学歴"
+    news: "更新履歴"
+    tools: "手法・ツール"
+    slides: "発表スライド"
+  groups:
+    journal: "学術論文"
+    preprint: "プレプリント"
+    international: "国際会議"
+    domestic: "国内発表"
+  link_kinds:
+    paper: "論文"
+    preprint: "プレプリント"
+    slides: "スライド"
+    code: "コード"
+    poster: "ポスター"

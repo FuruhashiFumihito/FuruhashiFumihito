@@ -1,16 +1,12 @@
 ---
-layout: archive
-title: "Publications"
 permalink: /publications/
-author_profile: true
+layout: single
+author_profile: false
+homepage: true
+lang: ja
+alt_url: /en/publications/
+title: "業績"
+description: "古橋 郁一（Fumihito Furuhashi）の論文・発表一覧。"
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% include rh-publications.html %}

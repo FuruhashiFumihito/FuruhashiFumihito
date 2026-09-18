@@ -1,0 +1,134 @@
+{%- comment -%}
+  Home page body, shared by the Japanese (/) and English (/en/) pages.
+  Text comes from _data/rh_strings.yml and the content data files; fields may be
+  a plain string (same in both languages) or an { en, ja } map.
+{%- endcomment -%}
+{% assign lang = page.lang | default: "ja" %}
+{% assign t = site.data.rh_strings[lang] %}
+{% assign o = site.data.rh_strings[t.other] %}
+{% assign pubs_url = t.home | append: "publications/" | relative_url %}
+
+{% assign slides = site.data.images.header %}
+{% if slides and slides.size > 0 %}
+<div class="rh-band" data-rh-slides>
+  {% for slide in slides %}
+  <img class="rh-band__slide{% if forloop.first %} is-active{% endif %}" {% if forloop.first %}src{% else %}data-src{% endif %}="{{ slide.src | prepend: '/images/' | relative_url }}" alt=""{% if slide.position %} style="object-position: {{ slide.position }}"{% endif %}>
+  {% endfor %}
+</div>
+{% endif %}
+
+<div class="rh-wrap">
+
+  <header class="rh-id">
+    <img src="{{ '/images/profile.jpeg' | relative_url }}" alt="{{ t.name_primary }}" width="88" height="88" fetchpriority="high">
+    <div class="rh-id__text">
+      <h1>{{ t.name_primary }}</h1>
+      <p class="rh-id__ja" lang="{{ t.other }}">{{ t.name_secondary }}</p>
+      <p>{{ t.role }}</p>
+      {% if t.role_sub %}<p class="rh-sub">{{ t.role_sub }}</p>{% endif %}
+    </div>
+  </header>
+
+  <nav class="rh-links" aria-label="{{ t.links_label }}">
+    <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+    <a href="{{ pubs_url }}">{{ t.publications_link }}</a>
+    <a href="https://scholar.google.co.jp/citations?user=beIKTAgAAAAJ&amp;hl={{ lang }}" rel="me">{% include rh-icon.html name="googlescholar" %}Google Scholar</a>
+    <a href="{{ site.author.orcid }}" rel="me">{% include rh-icon.html name="orcid" %}ORCID</a>
+    <a href="https://researchmap.jp/researchers?name=%E5%8F%A4%E6%A9%8B%20%E9%83%81%E4%B8%80" rel="me">researchmap</a>
+    <a href="https://jglobal.jst.go.jp/{% if lang == 'en' %}en/{% endif %}detail?JGLOBAL_ID=202601013210475944" rel="me">J-GLOBAL</a>
+    <a href="https://github.com/{{ site.author.github }}" rel="me">{% include rh-icon.html name="github" %}GitHub</a>
+  </nav>
+
+  <section id="about" class="rh-section rh-section--about">
+    <h2>{{ t.sections.about }} <span lang="{{ t.other }}">{{ o.sections.about }}</span></h2>
+    <p>{{ t.about }}</p>
+  </section>
+
+  <section id="research" class="rh-section rh-section--research">
+    <h2>{{ t.sections.research }} <span lang="{{ t.other }}">{{ o.sections.research }}</span></h2>
+    {% if site.data.images.research %}
+    {% assign research_img = site.data.images.research | prepend: '/images/' | relative_url %}
+    <a class="rh-figure" href="{{ research_img }}"><img src="{{ research_img }}" alt="" loading="lazy"></a>
+    {% endif %}
+    <div class="rh-topics">
+      {% for topic in site.data.research %}
+      <div>
+        <h3>{{ topic.title[lang] | default: topic.title }}</h3>
+        <p>{{ topic.body[lang] | default: topic.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="publications" class="rh-section rh-section--list">
+    <h2>{{ t.sections.selected }} <span lang="{{ t.other }}">{{ o.sections.selected }}</span></h2>
+    <div class="rh-list">
+      {% for pub in site.data.publications limit: 4 %}
+      <div class="rh-item">
+        <div class="rh-item__body">
+          <p>{{ pub.title }}</p>
+          <p class="rh-item__meta">{% if pub.authors %}{{ pub.authors }} · {% endif %}{{ pub.venue[lang] | default: pub.venue }}, {{ pub.year }}</p>
+          {% if pub.links %}
+          <p class="rh-item__links">{% for link in pub.links %}<a href="{{ link.url }}">{{ link.label | default: t.link_kinds[link.kind] }}</a>{% endfor %}</p>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="rh-more"><a href="{{ pubs_url }}">{{ t.all_publications }}</a></p>
+  </section>
+
+  <section id="awards" class="rh-section">
+    <h2>{{ t.sections.awards }} <span lang="{{ t.other }}">{{ o.sections.awards }}</span></h2>
+    <div class="rh-rows rh-rows--year">
+      {% for award in site.data.awards %}
+      <div class="rh-row">
+        <span class="rh-row__when">{{ award.year }}</span>
+        <div>
+          <p>{{ award.title[lang] | default: award.title }}</p>
+          <p class="rh-sub">{{ award.body[lang] | default: award.body }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="education" class="rh-section">
+    <h2>{{ t.sections.education }} <span lang="{{ t.other }}">{{ o.sections.education }}</span></h2>
+    <div class="rh-rows">
+      {% for row in site.data.education %}
+      <div class="rh-row">
+        <span class="rh-row__when">{{ row.when }}</span>
+        <div>
+          <p>{{ row.title[lang] | default: row.title }}</p>
+          <p class="rh-sub">{{ row.body[lang] | default: row.body }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% if site.data.news and site.data.news.size > 0 %}
+  <section id="news" class="rh-section">
+    <h2>{{ t.sections.news }} <span lang="{{ t.other }}">{{ o.sections.news }}</span></h2>
+    <div class="rh-rows rh-rows--news">
+      {% for item in site.data.news %}
+      <div class="rh-row">
+        <span class="rh-row__when">{{ item.date }}</span>
+        <p>{{ item.body[lang] | default: item.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if site.data.tools and site.data.tools.size > 0 %}
+  <section id="tools" class="rh-section rh-section--tools">
+    <h2>{{ t.sections.tools }} <span lang="{{ t.other }}">{{ o.sections.tools }}</span></h2>
+    <p class="rh-note">{% for tool in site.data.tools %}{{ tool[lang] | default: tool }}{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+  </section>
+  {% endif %}
+
+</div>
+
+{% if slides and slides.size > 1 %}<script src="{{ '/assets/js/rh-slideshow.js' | relative_url }}" defer></script>{% endif %}

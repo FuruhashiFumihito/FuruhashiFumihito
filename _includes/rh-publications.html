@@ -1,0 +1,62 @@
+{%- comment -%} Publications page body, shared by /publications/ and /en/publications/. {%- endcomment -%}
+{% assign lang = page.lang | default: "ja" %}
+{% assign t = site.data.rh_strings[lang] %}
+{% assign o = site.data.rh_strings[t.other] %}
+
+{% assign band = site.data.images.header_publications %}
+{% if band and band.src %}
+<div class="rh-band rh-band--sub"><img class="rh-band__slide is-active" src="{{ band.src | prepend: '/images/' | relative_url }}" alt=""{% if band.position %} style="object-position: {{ band.position }}"{% endif %}></div>
+{% endif %}
+
+<div class="rh-wrap rh-wrap--sub">
+
+  <p class="rh-back"><a href="{{ t.home | relative_url }}">{{ t.back_home }}</a></p>
+
+  <header class="rh-id rh-id--sub">
+    <div class="rh-id__text">
+      <h1>{{ t.publications_title }}</h1>
+      <p class="rh-id__ja" lang="{{ t.other }}">{{ o.publications_title }}</p>
+    </div>
+  </header>
+
+  <nav class="rh-links" aria-label="{{ t.external_lists }}">
+    <a href="https://scholar.google.co.jp/citations?user=beIKTAgAAAAJ&amp;hl={{ lang }}" rel="me">{% include rh-icon.html name="googlescholar" %}Google Scholar</a>
+    <a href="https://researchmap.jp/researchers?name=%E5%8F%A4%E6%A9%8B%20%E9%83%81%E4%B8%80" rel="me">researchmap</a>
+    <a href="{{ site.author.orcid }}" rel="me">{% include rh-icon.html name="orcid" %}ORCID</a>
+  </nav>
+
+  {% assign with_figures = site.data.publications | where_exp: "pub", "pub.figure" %}
+  {% assign groups = "journal,preprint,international,domestic" | split: "," %}
+
+  {% for group in groups %}
+    {% assign items = site.data.publications | where: "type", group %}
+    {% if items.size > 0 %}
+      <section class="rh-section rh-section--list">
+        <h2>{{ t.groups[group] }} <span lang="{{ t.other }}">{{ o.groups[group] }}</span></h2>
+        <div class="rh-list">
+          {% for pub in items %}
+          {% assign venue = pub.venue[lang] | default: pub.venue %}
+          <div class="rh-item">
+            <span class="rh-item__year">{{ pub.year }}</span>
+            {% if pub.figure %}<div class="rh-item__fig"><img src="{{ pub.figure | prepend: '/images/' | relative_url }}" alt="" loading="lazy"></div>
+            {% elsif with_figures.size > 0 %}<div class="rh-item__fig rh-item__fig--empty"></div>{% endif %}
+            <div class="rh-item__body">
+              <p>{{ pub.title }}</p>
+              <p class="rh-item__meta">{% if pub.authors %}{{ pub.authors }}{% if pub.type != "preprint" %} · {{ venue }}{% endif %}{% else %}{{ venue }}{% endif %}{% if pub.note %} — {{ pub.note[lang] | default: pub.note }}{% endif %}</p>
+              {% if pub.links %}
+              <p class="rh-item__links">{% for link in pub.links %}<a href="{{ link.url }}">{{ link.label | default: t.link_kinds[link.kind] }}</a>{% endfor %}</p>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+  {% endfor %}
+
+  <section class="rh-section rh-section--tools">
+    <h2>{{ t.sections.slides }} <span lang="{{ t.other }}">{{ o.sections.slides }}</span></h2>
+    <p class="rh-note">{{ t.slides_note }} <a href="https://speakerdeck.com/furuhashifumihito">Speaker Deck</a>{% if lang == "en" %}.{% endif %}</p>
+  </section>
+
+</div>
